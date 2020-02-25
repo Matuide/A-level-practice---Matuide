@@ -239,6 +239,7 @@ namespace TextAdventuresCS
             bool Inside = false;
             int count = a.Length;
 
+
             if (a.Length < b.Length)
             {
                 for (int i = 0; i < b.Length - 1; i++)
@@ -254,6 +255,7 @@ namespace TextAdventuresCS
                                 a[z] = '$';
                                 b[i] = '£';
                             }
+                        
 
                         }
                     }
@@ -891,7 +893,8 @@ namespace TextAdventuresCS
                         string WordOne = Console.ReadLine();
                         Console.WriteLine("Enter a word");
                         string WordTwo = Console.ReadLine();
-                        Console.WriteLine(TwoWords(WordOne, WordTwo));
+                        
+                           Console.WriteLine(TwoWords(WordOne, WordTwo));
                         break;
                     case "read":
                         ReadItem(items, instruction, characters[0].CurrentLocation);
